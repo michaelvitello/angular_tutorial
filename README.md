@@ -7,9 +7,12 @@
 
 ## Further Reading Material (WIP)
 
+- Angular Architecture: https://angular.io/guide/architecture
 - Angular Documentation: https://angular.io/docs
 - Angular Official Blog: https://blog.angular.io/
 - Angular Material: https://material.angular.io/
 - Angular CLI Documentation: https://cli.angular.io/
 - GitHub Angular CLI Documentation: https://github.com/angular/angular-cli/wiki
 - Angular Official Style Guide: https://angular.io/guide/styleguide (opinionated guide to Angular syntax, conventions, and application structure)
+- Angular API List: https://angular.io/api
+- Angular In-Memory Web API for testing without a real server: https://github.com/angular/in-memory-web-api
