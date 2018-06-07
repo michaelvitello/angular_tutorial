@@ -16,3 +16,4 @@
 - Angular Official Style Guide: https://angular.io/guide/styleguide (opinionated guide to Angular syntax, conventions, and application structure)
 - Angular API List: https://angular.io/api
 - Angular In-Memory Web API for testing without a real server: https://github.com/angular/in-memory-web-api
+- Learn RxJS GitBook: https://legacy.gitbook.com/book/btroncone/learn-rxjs/details
