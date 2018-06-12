@@ -1,3 +1,20 @@
-<p>
-  zippy works!
-</p>
+<div class="panel panel-default">
+
+  <div
+    class="panel-heading"
+    [class.expanded]="isExpanded"
+    (click)="onClick()">
+    {{ title }}
+    <span class="glyphicon"
+      [ngClass]="{
+        'glyphicon-chevron-up': isExpanded,
+        'glyphicon-chevron-down': !isExpanded
+      }">
+    </span>
+  </div>
+
+  <div *ngIf="isExpanded" class="panel-body">
+    <ng-content></ng-content>
+  </div>
+
+</div>
