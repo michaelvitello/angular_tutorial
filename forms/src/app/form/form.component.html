@@ -1,3 +1,32 @@
-<p>
-  form works!
-</p>
+<form #f="ngForm" (ngSubmit)="submit(f.value)">
+  <div class="form-group">
+    <label for="courseName">Course</label>
+    <input required minlength="3" ngModel name="name" #name="ngModel" type="text" id="courseName" class="form-control">
+      <div *ngIf="name.touched && name.invalid" class="alert alert-danger">
+        <div *ngIf="name.errors.required">Name field is required</div>
+        <div *ngIf="name.errors.minlength">Name field should be at least {{ name.errors.minlength.requiredLength }} characters</div>
+      </div>
+  </div>
+
+  <div class="form-group">
+    <label for="courseCategory">Category</label>
+    <select required ngModel name="category" #category="ngModel" id="courseCategory" class="form-control">
+      <option value=""></option>
+      <option *ngFor="let course of courseCategory" [value]="course.id"> {{ course.name }}</option>
+    </select>
+      <div *ngIf="category.touched && category.invalid" class="alert alert-danger">
+        <div *ngIf="category.errors.required">Category field is required</div>
+      </div>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input ngModel name="hasMoneyBack" type="checkbox" ngModel name="isTicked" id="moneyBack">
+      30 day money back guarantee
+    </label>
+  </div>
+
+  <div>
+    <button class="btn btn-primary" [disabled]="f.invalid">Submit</button>
+  </div>
+</form>
