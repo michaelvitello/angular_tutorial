@@ -1,3 +1,6 @@
-<p>
-  likes works!
-</p>
+<span class="glyphicon glyphicon-heart"
+  [class.active]="isLiked"
+  (click)="onClick()">
+</span>
+
+<span> {{ likesCount }} </span>
