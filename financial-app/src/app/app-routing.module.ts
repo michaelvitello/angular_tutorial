@@ -6,7 +6,7 @@ import { SecurityDetailComponent } from './security-detail/security-detail.compo
 
 
 const routes: Routes = [
-  { path: 'securities', component: SecuritiesComponent },
+  { path: 'securities$', component: SecuritiesComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'detail/:symbol', component: SecurityDetailComponent }

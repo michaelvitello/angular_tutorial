@@ -1,3 +1,15 @@
-<p>
-  security-detail works!
-</p>
+<div class="full-screen">
+  <ngx-charts-line-chart
+    *ngIf="security"
+    [scheme]="colorScheme"
+    [results]="security"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [autoScale]="true">
+  </ngx-charts-line-chart>
+</div>

@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <select formControlName="security">
+    <option *ngFor="let availableSecurity of availableSecurities" [ngValue]="availableSecurity">{{availableSecurity.name}}</option>
+  </select>
+
+  <label *ngFor="let range of availableRanges">
+    <input type="radio" formControlName="range" [value]="range">
+    {{ range.label }}
+  </label>
+
+</form>
+
+<div *ngIf="(securities$ | async); let security; else loading;">
+  <app-security-detail [security]="security"></app-security-detail>
+</div>
+
+<ng-template #loading>
+  LOADING..
+</ng-template>
