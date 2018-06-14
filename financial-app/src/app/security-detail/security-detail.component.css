@@ -1,8 +1,13 @@
-.full-screen {
-  margin-top: 16px;
-  height: calc(100vh - 120px);
-  width: 100%;
-  border: 2px darkgrey solid;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart {
+  height: 75vh;
+  width: 80%;
+  border: 1px #c9c9c9 solid;
+  background-color: #fcfcfc;
   border-radius: 4px;
-  background: whitesmoke;
 }

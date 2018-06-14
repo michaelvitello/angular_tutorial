@@ -79,8 +79,9 @@ export class SecurityService {
     securityObs: Observable<Security>,
     rangeObs: Observable<number>
   ): Observable<any> {
-    // 1 - 1 observable qui GET
-    // 2 - un observable qui filter
+
+    // 1 - 1 observable to GET
+    // 2 - un observable to filter
     // 3 - TIMER
 
     const i$ = combineLatest(timer(0, 60000), securityObs).pipe(

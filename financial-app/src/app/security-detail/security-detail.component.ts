@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from "@angular/core";
 export class SecurityDetailComponent implements OnInit {
   @Input() security: any;
 
-  view = [1024, 768];
+  view = [700, 500];
 
   showXAxis = true;
   showYAxis = true;
@@ -17,6 +17,7 @@ export class SecurityDetailComponent implements OnInit {
   xAxisLabel = "Dates";
   showYAxisLabel = true;
   yAxisLabel = "Price";
+  xAxisType="date"
 
   colorScheme = {
     domain: ["#5AA454", "#A10A28", "#C7B42C", "#AAAAAA"]

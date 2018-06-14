@@ -17,7 +17,7 @@ export class SecuritiesComponent implements OnInit {
     { label: "1Y", duration: 365 },
     { label: "3Y", duration: 365 * 3 },
     { label: "5Y", duration: 365 * 5 },
-    { label: "Max", duration: null }
+    { label: "Max", duration: 365 * 20 }
   ];
 
   form = this.fb.group({

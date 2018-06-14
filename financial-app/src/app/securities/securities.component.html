@@ -1,12 +1,17 @@
-<form [formGroup]="form">
-  <select formControlName="security">
-    <option *ngFor="let availableSecurity of availableSecurities" [ngValue]="availableSecurity">{{availableSecurity.name}}</option>
-  </select>
+<form [formGroup]="form" class="header">
 
-  <label *ngFor="let range of availableRanges">
-    <input type="radio" formControlName="range" [value]="range">
-    {{ range.label }}
-  </label>
+  <div class="selector">
+    <select formControlName="security">
+      <option *ngFor="let availableSecurity of availableSecurities" [ngValue]="availableSecurity">{{availableSecurity.name}}</option>
+    </select>
+  </div>
+
+  <div class="switch-field">
+    <label *ngFor="let range of availableRanges">
+      <input type="radio" formControlName="range" [value]="range">
+      {{ range.label }}
+    </label>
+  </div>
 
 </form>
 
