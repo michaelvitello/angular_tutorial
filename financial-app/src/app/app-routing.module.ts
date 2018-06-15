@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SecuritiesComponent } from './securities/securities.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { SecurityDetailComponent } from './security-detail/security-detail.component';
 
 
